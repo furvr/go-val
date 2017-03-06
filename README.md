@@ -28,3 +28,13 @@ if pass := contract.Validate(); !pass {
 	}
 }
 ```
+
+# Contributing
+
+Pull-requests are welcome, and so are you. :)
+
+Currently, approved PRs are those which improve performance and documentation, add useful functionality (core lib or built-ins), or fix bugs / flaws.
+
+If you'd like to submit a PR which changes the API, adds currently unrepresented functionality, or modifies existing (stable) behavior, create an issue and reference your pull request so we can talk about it.
+
+These contribution guidelines may be more structured in the future, depending on community reception.
