@@ -29,7 +29,7 @@ if pass := contract.Validate(); !pass {
 }
 ```
 
-# Contributing
+## Contributing
 
 Pull-requests are welcome, and so are you. :)
 
