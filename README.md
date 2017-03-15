@@ -2,7 +2,7 @@
 Val is a small, flexible data validation library written in Go.
 
 ## Working with Contracts
-A contract, in val-speak, is a list of terms (`[]Conditions`) which must be met. To create a contract, do:
+A contract, in val-speak, is a list of conditions (`[]Condition`) which must be met. To create a contract, do:
 
 ```go
 var contract = val.NewContract()
@@ -20,7 +20,7 @@ To run validation, call `contract.Validate()`. The returned boolean indicates wh
 When a contract fails validation, pointers to each failed `Condition` are provided in `contract.Fails`.
 
 ```go
-if ok := contract.Validate(); !ok {
+if errs := contract.Validate(); errs != nil {
 	for _, f := range contract.Fails {
 		fmt.Printf("Expected rules to pass; Data with sig `%v` returned errors: %v",
 			f.Condition.Data.Signature,
