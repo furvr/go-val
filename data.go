@@ -5,16 +5,17 @@ package val
 // data value or its characteristics outside of the local scope.
 type Data struct {
 	Value     []byte
-	Signature []string
+	Signature interface{}
 }
 
 // NewData returns an instance of `Data` with a value and a signature.
-func NewData(val []byte, sig []string) *Data {
+func NewData(val []byte, sig interface{}) *Data {
 	return &Data{
-		Value:     val,
+		value:     val,
 		Signature: sig,
 	}
 }
+
 
 // String returns a string from the current data value.
 func (d *Data) String() string {
