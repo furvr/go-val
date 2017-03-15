@@ -21,7 +21,7 @@ When a contract fails validation, pointers to each failed `Condition` are provid
 
 ```go
 if errs := contract.Validate(); errs != nil {
-	for _, f := range contract.Fails {
+	for _, f := range errs {
 		fmt.Printf("Expected rules to pass; Data with sig `%v` returned errors: %v",
 			f.Condition.Data.Signature,
 			f.Error)
