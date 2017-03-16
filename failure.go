@@ -7,9 +7,9 @@ type Failure struct {
 }
 
 // NewFailure creates an instance of a Failure.
-func NewFailure(cond *Condition, errs error) *Failure {
+func NewFailure(cond *Condition, err error) *Failure {
 	return &Failure{
 		Condition: cond,
-		Error:     errs,
+		Error:     err,
 	}
 }
