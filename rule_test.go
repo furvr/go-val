@@ -8,7 +8,7 @@ import "testing"
 func TestEqualsString(t *testing.T) {
 	var contract = NewContract()
 	var value = "value"
-	var data = NewData([]byte(value), []string{"TEST-VALUE"})
+	var data = NewData([]byte(value), "TYPE", "CATEGORY")
 
 	contract.AddRule(data, EqualsString(value, "VALUE-NOT-EQUALS"))
 

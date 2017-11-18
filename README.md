@@ -11,7 +11,7 @@ var contract = val.NewContract()
 Add rules to a contract with `contract.AddRule(*val.Data, val.ValidatorFunc)`. In the following example `val.EqualsString` is a built-in validation function which validates that the value contained in the provided data equals the string provided in its first parameter.
 
 ```go
-var data = NewData([]byte("value"), []string{"TEST-VALUE"})
+var data = NewData([]byte("value"), "DATA-TYPE", "DATA-CATEGORY")
 contract.AddRule(data, val.EqualsString("value", "Values are not equal."))
 ```
 

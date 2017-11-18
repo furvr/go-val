@@ -9,7 +9,7 @@ type Data struct {
 }
 
 // NewData returns an instance of `Data` with a value and a signature.
-func NewData(val []byte, sig []string) *Data {
+func NewData(val []byte, sig ...string) *Data {
 	return &Data{
 		Value:     val,
 		Signature: sig,
