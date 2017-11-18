@@ -20,7 +20,7 @@ To run validation, call `contract.Validate()`. The returned boolean indicates wh
 When a contract fails validation, pointers to each failed `Condition` are provided in `contract.Fails`.
 
 ```go
-if pass := contract.Validate(); !pass {
+if ok := contract.Validate(); !ok {
 	for _, f := range contract.Fails {
 		fmt.Printf("Expected rules to pass; Data with sig `%v` returned errors: %v",
 			f.Condition.Data.Signature,
