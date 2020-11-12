@@ -1,4 +1,4 @@
-# Val
+# Go Val[idation]
 Val is a small, flexible data validation library written in Go.
 
 ## Working with Contracts
