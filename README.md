@@ -1,5 +1,5 @@
-# Go Val[idation]
-Val is a small, flexible data validation library written in Go.
+# Val
+Val is a theoretical/experimental validation library written in Go. Its primary inteded purpose is validation of user-input data (usually from web forms). It should not (yet) be used in a production context.
 
 ## Working with Contracts
 A contract, in val-speak, is a list of terms (`[]Conditions`) which must be met. To create a contract, do:
